@@ -1,6 +1,8 @@
 # node-validate-india
 Module to validate Indian mobile numbers, Aadhaar, PAN, GST, etc.
 
+[![npm version](https://badge.fury.io/js/validate-india.svg)](https://badge.fury.io/js/validate-india)
+
 ## Installation
 ```sh
 npm install validate-india --save
