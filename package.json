@@ -1,0 +1,36 @@
+{
+  "name": "validate-india",
+  "version": "1.0.0",
+  "description": "Module to validate Indian mobile numbers, Aadhaar, PAN, GST, etc.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "mocha --require ts-node/register tests/**/*.ts",
+    "build": "rm -rf ./dist; tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soheltarir/node-validate-india.git"
+  },
+  "keywords": [
+    "India",
+    "Aadhaar",
+    "PAN",
+    "GST",
+    "Mobile"
+  ],
+  "author": "Sohel Tarir <sohel.tarir@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soheltarir/node-validate-india/issues"
+  },
+  "homepage": "https://github.com/soheltarir/node-validate-india#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
