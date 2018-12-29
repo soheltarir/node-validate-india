@@ -30,7 +30,7 @@ describe('IFSC', () => {
 
 describe('Mobile', () => {
     it('Testing Correct Mobile', () => {
-        expect(mobile.isValid('8698009017')).to.be.true;
+        expect(mobile.isValid('+918698009017')).to.be.true;
     });
     it('Testing Incorrect Mobile', () => {
         expect(mobile.isValid('1234567890')).to.be.false;
