@@ -1,6 +1,6 @@
 {
   "name": "validate-india",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Module to validate Indian mobile numbers, Aadhaar, PAN, GST, etc.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
