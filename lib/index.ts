@@ -1,22 +1,9 @@
 import { PAN_REGEX, AADHAAR_REGEX, IFSC_REGEX, MOBILE_REGEX, UAN_REGEX, ESIC_REGEX, GST_REGEX } from "./constants";
-
-class Root {
-    private regex: RegExp;
-
-    constructor(regex: string) {
-        this.regex = new RegExp(regex);
-    }
-    
-    public isValid(value: string | number): boolean {
-        if (typeof value === 'number') {
-            value = value.toString();
-        }
-        return this.regex.test(value);
-    }
-}
+import { Root } from "./root";
+import PAN from "./pan";
 
 // Personal Account Number
-export const pan = new Root(PAN_REGEX);
+export const pan = new PAN();
 // Aadhaar Number
 export const aadhaar = new Root(AADHAAR_REGEX);
 // Bank's Financial System Code

@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "mocha --require ts-node/register tests/**/*.ts",
-    "build": "rm -rf ./dist; tsc"
+    "test": "mocha --timeout 10000 --require ts-node/register tests/**/*.ts",
+    "build": "rm -rf dist && ./node_modules/.bin/tsc"
   },
   "repository": {
     "type": "git",
@@ -32,5 +32,9 @@
     "mocha": "^5.2.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@google-cloud/language": "^2.0.0",
+    "@google-cloud/vision": "^0.24.0"
   }
 }

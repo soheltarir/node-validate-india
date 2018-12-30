@@ -3,11 +3,15 @@ import { pan, aadhaar, ifsc, mobile, esic, uan, gst } from '../dist/index';
 
 describe('PAN', () => {
     it('Testing Correct PAN', () => {
-        expect(pan.isValid('BLEPM0048Q')).to.be.true;
+        expect(pan.isValid('BNZPM2501F')).to.be.true;
     });
     it('Testing Incorrect PAN', () => {
         expect(pan.isValid('1234567')).to.be.false;
     });
+    it('Testing OCR', async () => {
+        const res = await pan.extractFromImage('https://5.imimg.com/data5/WX/LM/MY-53146131/pancard-500x500.jpg')
+        expect(res).to.equal('BNZPM2501F');
+    })
 });
 
 describe('Aadhaar', () => {
