@@ -4,7 +4,7 @@ import { Root, OcrRoot } from "./root";
 // Personal Account Number
 export const pan = new OcrRoot(PAN_REGEX);
 // Aadhaar Number
-export const aadhaar = new OcrRoot(AADHAAR_REGEX);
+export const aadhaar = new OcrRoot(AADHAAR_REGEX, /[\s-]/g);
 // Bank's Financial System Code
 export const ifsc = new Root(IFSC_REGEX);
 // Indian Mobile Number

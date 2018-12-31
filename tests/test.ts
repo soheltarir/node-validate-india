@@ -21,6 +21,10 @@ describe('Aadhaar', () => {
     it('Testing Incorrect Aadhaar Number', () => {
         expect(aadhaar.isValid('1234567ABC')).to.be.false;
     });
+    it('Testing OCR', async () => {
+        const res = await aadhaar.extractFromImage('https://spiderimg.amarujala.com/assets/images/2016/12/13/aadhar-card_1481617623.jpeg')
+        expect(res).to.equal('444433332222');
+    })
 });
 
 describe('IFSC', () => {
