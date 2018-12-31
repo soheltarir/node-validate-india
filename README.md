@@ -72,6 +72,6 @@ console.log('PAN Number:', value);
 ```
 
 ## To-Do List
-- [] Extract Full Name, Father's Name and Date of Birth from PAN using OCR.
-- [] Extract Full Name, Date of Birth and Gender from Aadhaar Image using OCR.
+- [ ] Extract Full Name, Father's Name and Date of Birth from PAN using OCR.
+- [ ] Extract Full Name, Date of Birth and Gender from Aadhaar Image using OCR.
   
