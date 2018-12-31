@@ -1,11 +1,10 @@
 import { PAN_REGEX, AADHAAR_REGEX, IFSC_REGEX, MOBILE_REGEX, UAN_REGEX, ESIC_REGEX, GST_REGEX } from "./constants";
-import { Root } from "./root";
-import PAN from "./pan";
+import { Root, OcrRoot } from "./root";
 
 // Personal Account Number
-export const pan = new PAN();
+export const pan = new OcrRoot(PAN_REGEX);
 // Aadhaar Number
-export const aadhaar = new Root(AADHAAR_REGEX);
+export const aadhaar = new OcrRoot(AADHAAR_REGEX);
 // Bank's Financial System Code
 export const ifsc = new Root(IFSC_REGEX);
 // Indian Mobile Number
