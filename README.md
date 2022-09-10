@@ -56,7 +56,7 @@ Below is an example of simple validation
 ```typescript
 import { pan } from 'validate-india';
 
-f (pan.isValid('BMEQ0056N')) {
+if (pan.isValid('BMEQ0056N')) {
     console.log('Valid PAN provided');
 } else {
     console.log('Invalid PAN provided');
